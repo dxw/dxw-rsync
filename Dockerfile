@@ -7,5 +7,6 @@ RUN apt-get update \
     iputils-ping \
     git-core \
     curl \
+    ca-certificates \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
