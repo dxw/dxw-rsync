@@ -1,4 +1,4 @@
-FROM ubuntu:cosmic
+FROM ubuntu:xenial
 
 RUN apt-get update \
     && apt-get upgrade -y \
@@ -8,5 +8,6 @@ RUN apt-get update \
     git-core \
     curl \
     ca-certificates \
+    dbndns \
     && rm -rf /var/lib/apt/lists/* \
     && apt-get clean
